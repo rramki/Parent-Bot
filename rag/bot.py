@@ -8,6 +8,7 @@ openai_api_key = st.secrets["OPENAI_API_KEY"]
 
 # Initialize the OpenAI client
 # The client automatically picks up the key if the env var OPENAI_API_KEY is set
+load_dotenv()
 client = OpenAI(api_key=openai_api_key)
 #load_dotenv()
 #client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
